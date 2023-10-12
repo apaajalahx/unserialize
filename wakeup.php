@@ -17,7 +17,5 @@ class Test {
     }
 
 }
-$data = new Test;
-$data->method = 'phpinfo';
-$serialize = serialize($data);
-@unserialize($serialize);
+
+@unserialize('O:4:"Test":1:{s:6:"method";s:7:"phpinfo";}');
